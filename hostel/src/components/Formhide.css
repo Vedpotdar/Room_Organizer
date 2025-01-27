@@ -1,0 +1,25 @@
+.form_fees{
+    display: none;
+}
+#form_fees{
+    width: 100%;
+}
+.btn{
+    width: 100%;
+}
+.Student_list{
+    width: 100%;
+    display: none;
+    margin: 0 auto;
+}
+.Student_list h2{
+    width: 80%;
+    margin: 2% auto;
+    font-weight: bold;
+}
+.showingdata h2{
+    font-size: 1.5rem;
+}
+.showingdata h2 span{
+    font-size: 1.8rem;
+}

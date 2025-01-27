@@ -1,0 +1,127 @@
+/* General reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Main container style */
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #7499fe;
+}
+
+/* Books container style */
+.books {
+    width: 90%;
+    max-width: 1200px;
+    margin: 5%;
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for each floor section */
+.book-selector {
+    background: rgb(255,255,255);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Title style for each floor */
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Room container styles */
+.rooms {
+    width: 100%;
+}
+
+/* Status indicators */
+.status {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.status .item {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.status .item .status-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.status .item.empty .status-color {
+    background-color: #ffffff; /* White */
+}
+
+.status .item.full .status-color {
+    background-color: #ff0000; /* Red */
+}
+
+.status .item.partial .status-color {
+    background-color: #008000; /* Green */
+}
+
+.status .item.selected .status-color {
+    background-color: #0000ff; /* Blue */
+}
+
+/* Grid layout for rooms */
+.all-rooms {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Room label styles */
+.room {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+.room:hover {
+    background-color: #eef; /* Lighter shade for hover */
+}
+
+.room.selected {
+    background-color: #0a27a7; /* Light blue background for selected rooms */
+}
+.room.empty {
+    background-color: #ffffff; /* Light blue background for selected rooms */
+}
+.room.full {
+    background-color: #ff0000;; /* Light blue background for selected rooms */
+}
+.room.partial {
+    background-color: #008000;; /* Light blue background for selected rooms */
+}
+
+
+
+
